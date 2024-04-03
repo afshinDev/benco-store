@@ -1,0 +1,40 @@
+.empty-cart {
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-cart__banner {
+  width: 10rem;
+}
+
+.empty-cart__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.empty-cart__message {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: rgb(58, 58, 58);
+  font-family: var(--font-medium);
+}
+
+.empty-cart__btn {
+  background-color: var(--primary);
+  color: white;
+  font-family: var(--font-medium);
+  text-transform: uppercase;
+  padding: 1rem 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  transition: 200ms;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.empty-cart__btn:hover {
+  background-color: var(--primary-700);
+}

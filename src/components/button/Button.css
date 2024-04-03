@@ -1,0 +1,23 @@
+.round {
+  font-size: 2.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.round--small {
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0.2rem;
+}
+
+.primary {
+  padding: 1.2rem 4rem;
+}
+
+.primary--md {
+  width: 85%;
+  padding: .8rem 0;
+  margin: 0 auto;
+  text-emphasis: center;
+}

@@ -1,0 +1,13 @@
+.update-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  /* border: 2px solid; */
+  /* padding: 0.5rem; */
+  border-radius: 50rem;
+}
+
+.current-quantity {
+  font-size: 2rem;
+  font-family: var(--font-medium);
+}

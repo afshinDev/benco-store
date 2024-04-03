@@ -1,0 +1,123 @@
+.sidebar {
+  width: 100%;
+  height: 65rem;
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  z-index: 10;
+  left: -150%;
+  visibility: hidden;
+  transition: ease-in-out 400ms;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.sidebar.sidebar--open {
+  visibility: visible;
+  left: 0;
+}
+
+.sidebar__wrapper {
+  padding: 1rem;
+  position: relative;
+}
+
+.sidebar__toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: rgb(170, 170, 170);
+  border-radius: 1rem 0 1rem 50%;
+  width: 3.5rem;
+  border: 0;
+  outline: 0;
+  color: var(--primary);
+  display: block;
+}
+
+.sort-list {
+  border-bottom: 2px solid rgb(172, 172, 172);
+  margin-bottom: 2rem;
+}
+
+.sort-list__heading {
+  position: relative;
+  display: inline-block;
+  font-size: 1.9rem;
+  padding-bottom: 0.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: var(--primary-900);
+  font-family: var(--font-medium);
+}
+
+.sort-list__heading::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: var(--primary-800);
+}
+
+.sort-options {
+  padding: 1.5rem 0rem 1rem;
+}
+
+.sort-options__item {
+  position: relative;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-family: var(--font-medium);
+  color: var(--text-1);
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+
+.sort-options__item--active {
+  color: var(--primary);
+}
+
+.sort-options__item::before {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  bottom: 0.8rem;
+  margin: auto 0;
+  content: "";
+  width: 0.8rem;
+  height: 1.8rem;
+  border-bottom: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
+  transition: 300ms ease;
+  transform: rotate(-45deg) scale(0);
+}
+
+.sort-options__item--active.sort-options__item::before {
+  transform: rotate(45deg) scale(1);
+}
+
+.sort-options__item:hover {
+  color: var(--primary);
+}
+
+@media (min-width: 576px) {
+  .sidebar {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: static;
+    visibility: visible;
+  }
+
+  .sidebar__toggle {
+    display: none;
+  }
+}

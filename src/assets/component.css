@@ -1,0 +1,18 @@
+.btn {
+  background-color: var(--text-0);
+  color: var(--bg);
+  font-family: var(--font-semibold);
+  text-transform: capitalize;
+  transition: 300ms;
+  border: 0;
+  outline: 0;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--text-0);
+  border: 2px solid var(--text-0);
+}

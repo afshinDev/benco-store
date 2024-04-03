@@ -1,0 +1,42 @@
+@import url(./font.css);
+
+:root {
+  --primary: #059669;
+  --primary-700: #047857;
+  --primary-800: #065f46;
+  --primary-900: #064e3b;
+  --bg: #f1f5f9;
+  --text-0: #27272a;
+  --text-1: #3f3f46;
+  --font-regular: "regular";
+  --font-semibold: "semibold";
+  --font-black: "black";
+  --font-medium: "medium";
+  --font-bold: "bold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-regular);
+}
+
+.products-section__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.cart-section {
+  padding: 5.5rem 0;
+}

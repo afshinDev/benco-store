@@ -1,0 +1,36 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.heading {
+  border-bottom: 0.2rem solid var(--primary);
+  text-transform: uppercase;
+  font-family: var(--font-bold);
+  color: var(--text-1);
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.7rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.normal {
+  align-items: normal;
+}
+
+.reverse {
+  flex-wrap: wrap-reverse;
+}
